@@ -13,14 +13,13 @@ int main() {
 		string s1 = to_string(i);
 		for (int j = 0; j < s1.length(); j++) {
 			//문자열 길이만큼 비교
-			string sub = s1.substr(j, j + 1);
-			for (int k = 0; k < 10; k++) {
-				//0~9가 몇개있는지 확인
-				string s2 = to_string(k);
-				if (sub == s2) {
-					result[k] += 1;
-				}
-			}
+			string sub = s1.substr(j,1);
+			
+			int k = stoi(sub);
+
+            		if (k >= 0 && k <= 9) {
+                		result[k]++;
+            		}
 		}
 	}
 
