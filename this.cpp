@@ -1,4 +1,4 @@
-//move 함수는 this포인터 변수에 객체의 주소를 저장하여 들고옴
+//move 함수와 Print함수는 this포인터 변수에 객체의 주소를 저장하여 들고옴
 //move(CPoint *this, int a, int b)의 형태로 python의 self느낌
 #include <iostream>
 #include<string>
