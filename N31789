@@ -1,0 +1,25 @@
+#include <iostream>
+#define FASTIO  cin.tie(nullptr); ios::sync_with_stdio(false);
+using namespace std;
+
+int N,X,S;
+int cost, power;
+
+int main() {
+	FASTIO;
+
+	string result = "NO";
+	cin >> N;
+	cin >> X >> S;
+
+	while (N--) {
+		cin >> cost >> power;
+		if (X >= cost && S < power) {
+			result = "YES";
+		}
+	}
+
+	cout << result;
+
+	return 0;
+}
